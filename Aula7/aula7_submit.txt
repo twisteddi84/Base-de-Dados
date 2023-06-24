@@ -1,0 +1,158 @@
+# BD: Guião 7
+
+
+## ​7.2 
+ 
+### *a)*
+
+```
+... Write here your answer ...
+Está na 1FN pois não tem atributos com multivalores mas não está na 2FN pois existe uma dependência parcial em Nome_Autor à Afiliacao_Autor
+```
+
+### *b)* 
+
+```
+Livro(_Titulo_Livro_,_Nome_Autor_,Tipo_Livro,No_Paginas,Editor,Ano_Publicado)
+Titulo_Livro, Nome_Autor -> Editor, Tipo_Livro, NoPaginas, Ano_Publicacao
+
+Autor(_Nome_Autor_,Afiliacao_Autor)
+Nome_Autor -> Afiliacao_Autor
+
+Preco(_Tipo_Livro_,_No_Paginas_,Preco)
+Tipo_Livro,No_Paginas -> Preco
+
+Editor(_Editor_,Endereco_Editor)
+Editor -> Endereco_Editor
+```
+
+
+## ​7.3
+ 
+### *a)*
+
+```
+A chave é {A,B}
+```
+
+
+### *b)* 
+
+```
+R1 = {A,B,C}
+F1{{A,B} -> {C}}
+
+R2 = {A,D,E,I,J}
+F2{{A} -> {D,E},{D}→{I, J}}
+
+R3 = {B,F,G, H}
+F3{{B} -> {F}, {F}→{G, H},}
+```
+
+
+### *c)* 
+
+```
+R1 = {A,B,C}
+F1{{A,B} -> {C}}
+
+R2 = {A,D,E}
+F2{{A} -> {D,E}}
+
+R3 = {B,F}
+F3{{B} -> {F}}
+
+R3 = {B,F}
+F3{{B} -> {F}}
+
+R4 = {F,G,H}
+F4{{F} -> {G,H}}
+
+R5 = {D,I,J}
+F5{{D} -> {I,J}}
+```
+
+
+## ​7.4
+ 
+### *a)*
+
+```
+Chave é {A,B}
+
+```
+
+
+### *b)* 
+
+```
+R1 = {A,B,C,D}
+F1{{A,B} -> {C,D} , {C} -> {A}}
+
+R2 = {D,E}
+F2{{D} -> {E}}
+
+```
+
+
+### *c)* 
+
+```
+R1 = {A,B,C,D}
+F1{{A,B} -> {C,D}}
+
+R2 = {D,E}
+F2{{D} -> {E}}
+
+R3 = {C,A}
+F3{{C} -> {A}}
+```
+
+
+
+## ​7.5
+ 
+### *a)*
+
+```
+Chave é o {A,B}
+
+```
+
+### *b)* 
+
+```
+R1 = {A,B,E}
+F1{{A,B} -> {E}}
+
+R2 = {A,C,D}
+F2{{A} -> {C}, {C} -> {D}}
+```
+
+
+### *c)* 
+
+```
+R1 = {A,B,E}
+F1{{A,B} -> {E}}
+
+R2 = {A,C}
+F2{{A} -> {C}}
+
+R2 = {C,D}
+F2{{C} -> {D}}
+
+```
+
+### *d)* 
+
+```
+R1 = {A,B,E}
+F1{{A,B} -> {E}}
+
+R2 = {A,C}
+F2{{A} -> {C}}
+
+R2 = {C,D}
+F2{{C} -> {D}}
+```
